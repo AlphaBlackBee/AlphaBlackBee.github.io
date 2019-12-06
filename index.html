@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OpenSource AlphaBlackBee</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/AlphaBlackBee.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <img src="img/QFN48Logo_test.png" alt="Image" class="tm-special-item-img"/>
+      </div>
+      <div class="tm-main-content">
+        <div id="tm-intro-img"></div>
+        <!-- Menu -->
+
+        <!-- Special Items -->
+        <section class="tm-section">
+          <div class="tm-special-items">
+            <figure class="tm-special-item">
+              <img src="img/Open-source-hardware.png" alt="Image" class="tm-special-item-img" />
+            </figure>
+          </div>
+        </section>
+        <hr />
+        <!-- Project -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">Project</h2>
+          <label>
+            <div class="link-project">
+              <a  href="./pages/Wattfred.html" target="_blank">Wattfred - Power Manager</a>
+            </div>
+          </label>
+        </section>
+        <hr />
+        <!-- About Me -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">About Me</h2>
+          <p>
+            Developpeur embarque specialise dans les STM32, je developpe mes cartes personnels a titre educatif
+            et a but passionnel.
+          </p>
+          <p class="tm-mb-0">
+            Tout les codes ainsi que les cartes sur ce github sont 
+            entierement opensources logiciel (MIT en general) et open source hardware.
+          </p>
+        </section>
+        <hr />
+        <!-- Talk to us -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">Contact</h2>
+          <p class="tm-mb-0">
+            Reach me via
+            <a href="mailto:michael.barbarin@gmail.com" class="tm-contact-link">Email</a>
+            or follow me on social icons below. Thank you.
+          </p>
+          <div class="tm-social-icons">
+            <div class="tm-social-link-container">
+              <a href="https://www.facebook.com/michael.barbarin.5" class="tm-social-link">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+            <div class="tm-social-link-container">
+              <a href="https://linkedin.com" class="tm-social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <p class="tm-text-white tm-footer-text">
+          . Design:
+          <a href="https://www.tooplate.com" class="tm-footer-link">Tooplate</a>
+        </p>
+      </footer>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        // Adjust intro image height based on width.
+        $(window).resize(function() {
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+  </body>
+</html>
